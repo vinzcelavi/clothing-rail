@@ -1,0 +1,491 @@
+{
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "transparent": true
+  },
+  "render": {
+    "samples": 96,
+    "preview_samples": 16,
+    "preview_scale_percent": 50,
+    "exposure": -0.55,
+    "motion_blur": true,
+    "shutter": 0.35
+  },
+  "timing": {
+    "intro_hold_s": 1.2,
+    "intro_turn_s": 1.0,
+    "hold_s": 1.7,
+    "turn_s": 0.85,
+    "slide_per_slot_s": 0.3,
+    "outro_turn_s": 0.9,
+    "outro_hold_s": 0.8
+  },
+  "rail": {
+    "profile_gap_m": 0.14,
+    "gap_jitter_m": 0.01,
+    "front_gap_m": 0.52,
+    "profile_angle_deg": -90,
+    "easing": [
+      0.5,
+      0.0,
+      0.2,
+      1.0
+    ],
+    "turn_window": 1.0,
+    "turn_plateau": 0.0,
+    "space_window": 1.35,
+    "intro_offset": 0.35,
+    "outro_offset": 0.35
+  },
+  "sway": {
+    "length_m": 0.45,
+    "damping": 0.4,
+    "gain": 0.08,
+    "settle_s": 0.9
+  },
+  "fabric": {
+    "chest": {
+      "freq_hz": 1.3,
+      "damping": 0.4,
+      "gain": 0.12,
+      "max_deg": 5
+    },
+    "hem": {
+      "freq_hz": 1.0,
+      "damping": 0.4,
+      "gain": 0.15,
+      "max_deg": 6
+    },
+    "twist": {
+      "freq_hz": 1.2,
+      "damping": 0.4,
+      "gain": 0.45,
+      "max_deg": 8
+    },
+    "sleeve": {
+      "freq_hz": 1.1,
+      "damping": 0.35,
+      "gain": 0.25,
+      "max_deg": 9
+    },
+    "sleeve_rest": {
+      "in_deg": 0,
+      "forward_deg": 0
+    },
+    "rig": {
+      "shoulder_z": -0.3,
+      "waist_z": -0.55,
+      "hem_z": -0.86,
+      "sleeve_root": [
+        0.19,
+        -0.31
+      ],
+      "sleeve_tip": [
+        0.3,
+        -0.86
+      ],
+      "sleeve_inner_x": 0.165,
+      "blend_m": 0.05
+    }
+  },
+  "garment": {
+    "front": "assets/photos/blue-front.png",
+    "back": "assets/photos/blue-back.png",
+    "height_m": 0.8,
+    "thickness_m": 0.032,
+    "round_m": 0.05,
+    "grid_step_px": 5,
+    "detail_edge_px": 14,
+    "detail_flatten_px": 60,
+    "detail_rim_fade_px": 40,
+    "rim_smoothing": 8,
+    "hook_clearance_m": 0.05,
+    "roughness": 0.9,
+    "sheen": 0.15,
+    "bump": 0.12,
+    "heather_scale": 900,
+    "logo": {
+      "file": "assets/logo.png",
+      "placeholder_text": "TKNP",
+      "center_px": [
+        1067,
+        900
+      ],
+      "width_px": 174
+    }
+  },
+  "drape": {
+    "enabled": true,
+    "frames": 90,
+    "proxy_sub": 5,
+    "quality": 6,
+    "mass": 0.3,
+    "tension": 40,
+    "shear": 20,
+    "bending": 1.0,
+    "damping": 5,
+    "air_damping": 4,
+    "wind": 0,
+    "wind_frames": 30,
+    "hanger_line": {
+      "neck_half_width_m": 0.105,
+      "neck_z_m": -0.248,
+      "shoulder_z_m": -0.2492,
+      "slope": 0.57,
+      "half_width_m": 0.2,
+      "band_m": 0.03
+    }
+  },
+  "hood": {
+    "enabled": true,
+    "hinge_px": 580,
+    "taper_m": 0.06,
+    "taper_half_width_m": 0.13,
+    "neck_scale": 0.2,
+    "neck_front_scale": 0.75,
+    "length_scale": 0.95,
+    "fold_scale": 0.15,
+    "fold_thin_m": 0.022,
+    "bag_m": 0.085,
+    "bag_reach_m": 0.12,
+    "bag_exponent": 0.75,
+    "bag_start_m": 0.015,
+    "bag_len_m": 0.11,
+    "seam_depth": 0.08,
+    "seam_width_m": 0.006,
+    "shell_from_m": -0.012,
+    "shell_len_m": 0.02,
+    "edge_round_m": 0.015,
+    "crease_deg": 90,
+    "crease_len_m": 0.025,
+    "fold_deg": 90,
+    "fold_len_m": 0.04,
+    "tuck_deg": 0,
+    "tuck_len_m": 0.05,
+    "lean_m": 0.0,
+    "lean_len_m": 0.03,
+    "rest_gap_m": 0.002,
+    "rest_edge_m": -0.008,
+    "hang": {
+      "bottom_m": -0.125,
+      "curve": 10.7,
+      "cell_m": 0.002
+    },
+    "recess": {
+      "depth_m": 0.035,
+      "half_width_m": 0.034,
+      "exponent": 0.8,
+      "soft_m": 0.01,
+      "gap_m": 0.002,
+      "roll_m": 0.009,
+      "roll_offset_m": 0.011,
+      "roll_width_m": 0.009,
+      "roll_ref_m": 0.015,
+      "flare": 1.4,
+      "flare_max_m": 0.02
+    },
+    "stand": {
+      "center_m": 0.022,
+      "ear_m": 0.06,
+      "open_half_width_m": 0.038,
+      "ramp_m": 0.03,
+      "cover_m": -0.019,
+      "cover_slope": 0.6,
+      "cover_max_m": 0.006,
+      "cap_round_m": 0.02,
+      "edge_passes": 12,
+      "shoulder_from_m": 0.078,
+      "shoulder_clear_m": 0.003,
+      "tuck_from_m": 0.105,
+      "tuck_keep": 0.1,
+      "tuck_rise_m": 0.008,
+      "level_from_m": 0.085,
+      "level_len_m": 0.015,
+      "fill_rise_m": 0.02,
+      "fill_fade_m": 0.004
+    }
+  },
+  "hanger": {
+    "color": "#C08A55",
+    "half_width_m": 0.17,
+    "thickness_m": 0.014,
+    "height_m": 0.028,
+    "tip_height_m": 0.024,
+    "apex_z_m": -0.158,
+    "slope": 0.8,
+    "curve": 2.8,
+    "crown_radius_m": 0.02,
+    "cap_from_m": 0.1,
+    "cap_len_m": 0.035,
+    "drop_m": 0.025,
+    "lift_m": 0.07
+  },
+  "sleeves": {
+    "cuff_start": 0.89,
+    "cuff_scale": 0.62,
+    "cuff_puff": 0.12,
+    "cuff_round_m": 0.015
+  },
+  "wrinkles": {
+    "enabled": true,
+    "amplitude_m": 0.0035,
+    "sleeve_boost": 1.3,
+    "count": 7,
+    "wavelength_m": [
+      0.035,
+      0.08
+    ],
+    "patch_m": 0.3,
+    "sleeve_fold_m": 0.004,
+    "sleeve_fold_width_m": 0.03
+  },
+  "variation": {
+    "seed": 7,
+    "hood": {
+      "shift_m": 0.02,
+      "drop": 0.12,
+      "puff": 0.2,
+      "crease_deg": 12,
+      "bag_m": 0.008,
+      "bag_reach_m": 0.015,
+      "seam_depth": 0.03
+    },
+    "sleeves": {
+      "bent_share": 0.5,
+      "both_share": 0.3,
+      "forward_deg": [
+        -1.5,
+        3.0
+      ],
+      "elbow_deg": [
+        2.0,
+        7.0
+      ],
+      "fullness": [
+        0.85,
+        1.15
+      ],
+      "fold_counts": [
+        0,
+        1,
+        1,
+        2
+      ]
+    }
+  },
+  "stage": {
+    "rail_z_m": 1.8,
+    "rail_radius_m": 0.011,
+    "rail_color": "#1C1C1C",
+    "hook_color": "#C9C9C9",
+    "wall_y_m": 0.6,
+    "wall_color": "#BDB4A6"
+  },
+  "camera": {
+    "lens_mm": 85,
+    "visible_width_m": 1.15,
+    "rail_from_top": 0.27
+  },
+  "lights": {
+    "areas": {
+      "key": {
+        "position": [
+          -0.6,
+          -3.2,
+          0.3
+        ],
+        "size_m": 3.0,
+        "energy_w": 110
+      },
+      "fill": {
+        "position": [
+          1.8,
+          -1.6,
+          0.0
+        ],
+        "size_m": 3.0,
+        "energy_w": 40
+      },
+      "wash": {
+        "position": [
+          0.0,
+          -0.4,
+          1.6
+        ],
+        "size_m": 3.0,
+        "energy_w": 20.0,
+        "target": [
+          0.0,
+          0.6,
+          -1.2
+        ]
+      }
+    },
+    "world_color": "#8C8781",
+    "world_strength": 0.55
+  },
+  "fillers_before": [
+    {
+      "name": "Taupe",
+      "color": "#836F51",
+      "heather": 0.3,
+      "logo": null
+    },
+    {
+      "name": "Gris perle",
+      "color": "#CED1D2",
+      "heather": 0.5,
+      "logo": null
+    },
+    {
+      "name": "Anthracite",
+      "color": "#3A3A3C",
+      "heather": 0.4,
+      "logo": null
+    },
+    {
+      "name": "Vieux rose",
+      "color": "#CFA39C",
+      "heather": 0.2,
+      "logo": null
+    },
+    {
+      "name": "Navy",
+      "color": "#262E44",
+      "heather": 0.2,
+      "logo": null
+    }
+  ],
+  "items": [
+    {
+      "name": "Cloud Dancer",
+      "color": "#E2D5CB",
+      "heather": 0.5,
+      "logo": "#151515"
+    },
+    {
+      "name": "Cassis",
+      "color": "#8A3A3C",
+      "heather": 0.5,
+      "logo": "#EDE4D3"
+    },
+    {
+      "name": "Orange Topaze",
+      "color": "#FF6A12",
+      "heather": 0.0,
+      "logo": "#151515"
+    },
+    {
+      "name": "Cool Blue",
+      "color": "#BCC8D8",
+      "heather": 0.5,
+      "logo": "#151515"
+    },
+    {
+      "name": "Wasabi",
+      "color": "#D2C258",
+      "heather": 0.3,
+      "logo": "#151515"
+    },
+    {
+      "name": "Vert Sauge",
+      "color": "#76825F",
+      "heather": 0.0,
+      "logo": "#151515"
+    }
+  ],
+  "fillers_between": [
+    [
+      {
+        "name": "Bleu orage",
+        "color": "#4E7F94",
+        "heather": 0.2,
+        "logo": null
+      },
+      {
+        "name": "Lin",
+        "color": "#DACFA6",
+        "heather": 0.4,
+        "logo": null
+      }
+    ],
+    [
+      {
+        "name": "Gris chiné",
+        "color": "#A3A19E",
+        "heather": 0.7,
+        "logo": null
+      }
+    ],
+    [
+      {
+        "name": "Kaki",
+        "color": "#4E4B38",
+        "heather": 0.0,
+        "logo": null
+      },
+      {
+        "name": "Pêche",
+        "color": "#EFC79B",
+        "heather": 0.0,
+        "logo": null
+      }
+    ],
+    [
+      {
+        "name": "Mauve",
+        "color": "#7B5F73",
+        "heather": 0.2,
+        "logo": null
+      },
+      {
+        "name": "Sauge clair",
+        "color": "#91AD99",
+        "heather": 0.2,
+        "logo": null
+      }
+    ],
+    [
+      {
+        "name": "Lavande grise",
+        "color": "#8889B1",
+        "heather": 0.3,
+        "logo": null
+      }
+    ]
+  ],
+  "fillers_after": [
+    {
+      "name": "Écru",
+      "color": "#E8E2D6",
+      "heather": 0.3,
+      "logo": null
+    },
+    {
+      "name": "Moka",
+      "color": "#A07E67",
+      "heather": 0.3,
+      "logo": null
+    },
+    {
+      "name": "Vert de gris",
+      "color": "#64746E",
+      "heather": 0.3,
+      "logo": null
+    },
+    {
+      "name": "Sable",
+      "color": "#D5B680",
+      "heather": 0.2,
+      "logo": null
+    },
+    {
+      "name": "Ardoise",
+      "color": "#404658",
+      "heather": 0.3,
+      "logo": null
+    }
+  ]
+}
